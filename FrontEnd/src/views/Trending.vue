@@ -14,18 +14,6 @@
             <div class="col"></div>
         </div>
     </div>
-
-
-    <!-- <section class="section trending" id="trending">
-        <div class="section__title">
-            <h1>what's trending</h1>
-        </div>
-        <div class="trending__container container">
-            <div class="trending__content swiper">
-                <div class="trending__products swiper-wrapper"></div>
-            </div>
-        </div>
-    </section> -->
 </template>
 <script>
 export default {

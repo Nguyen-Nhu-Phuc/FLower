@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import headerAdmin from "../../components/headerAdmin.vue";
+import headerAdmin from "../../components/Header/headerAdmin.vue";
 import axios from "axios";
 
 export default {

@@ -2,7 +2,7 @@
     <headerAdmin></headerAdmin>
     <div class="bodys">  
         <div class="headanhmuc">
-            <h3 class="abc">DANH SÁCH NGƯỜI DÙNG</h3>
+            <h3 class="list__title--users">DANH SÁCH NGƯỜI DÙNG</h3>
         </div>
         <table class="table">
             <thead>
@@ -37,11 +37,9 @@
                     <th colspan="8" class="text-center">
                         <div class="btn-pt">
                             <div class="phantrang">
-                                <button class="btn" @click="prevPage" :disabled="currentPage === 1">Trang
-                                    Trước</button>
+                                <button class="btn" @click="prevPage" :disabled="currentPage === 1">Trang Trước</button>
                                 <span>Trang {{ currentPage }} / {{ pageCount }}</span>
-                                <button class="btn" @click="nextPage" :disabled="currentPage === pageCount">Trang
-                                    Sau</button>
+                                <button class="btn" @click="nextPage" :disabled="currentPage === pageCount">Trang Sau</button>
                             </div>
                         </div>
                     </th>
@@ -49,10 +47,10 @@
             </tbody>
         </table>
     </div>
-</template>
+</template>u 
 
 <script>
-import headerAdmin from '../../components/headerAdmin.vue'
+import headerAdmin from '../../components/Header/headerAdmin.vue'
 import axios from 'axios'
 export default {
     components: {
@@ -83,8 +81,6 @@ export default {
 
     },
     mounted() {
-        // Simulate fetching data from an API
-        // Mô phỏng việc lấy dữ liệu từ API
         setTimeout(() => {
             this.User
         }, 1000);
@@ -133,7 +129,7 @@ export default {
     margin-top: 40px;
     color: white;
 }
-.abc{
+.list__title--users{
     position: relative;
     top: 30px;
 }

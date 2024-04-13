@@ -36,7 +36,7 @@
 
 <script>
 import axios from 'axios'
-import headerAdmin from '../../components/headerAdmin.vue';
+import headerAdmin from '../../components/Header/headerAdmin.vue';
 
 export default {
     components: {

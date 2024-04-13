@@ -177,7 +177,7 @@
   </div>
 </template>
 <script setup>
-import headerAdmin from "../../components/headerAdmin.vue";
+import headerAdmin from "../../components/Header/headerAdmin.vue";
 import { onMounted, ref, inject } from "vue";
 import { getOrder, updateOrder } from "../../api/order.api";
 import dayjs from "dayjs";

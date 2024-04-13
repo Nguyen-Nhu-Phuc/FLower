@@ -1,22 +1,16 @@
 <template>
     <div>
-        <div class="form-admin">
-            <div class="container">
+        <div class="">
+            <div class="container-fluid">
                 <div class="d-flex justify-content-between">
-                    <!-- <div class="">
-                        <router-link to="/demo" class="item-admin"> Home Demo</router-link>
-                    </div> -->
-
                     <div class="">
                         <router-link to="/admin" class="item-admin"> Kho sản phẩm </router-link>
 
                     </div>
                     <div class="">
                         <router-link to="/admin/listTrademark" class="item-admin"> DS thương hiệu </router-link>
-                        <!-- <CreactTrademark></CreactTrademark> -->
                     </div>
                     <div class="">
-                        <!-- <CreateProductPortfolio></CreateProductPortfolio> -->
                         <router-link to="/admin/List_Category" class="item-admin"> DS danh mục </router-link>
                     </div>
                     <div class="">
@@ -79,7 +73,7 @@ export default {
     width: 1260px;
     height: 100px;
     margin: 20px auto;
-    background-color: rgb(65, 65, 65);
+    background-color: #353535;
 }
 
 

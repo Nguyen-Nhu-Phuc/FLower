@@ -164,8 +164,8 @@
                                                                 placeholder="VNĐ" :value="this.gia" id="prices"
                                                                 v-model="this.product.price" required="true">
                                                             <div class="form-control">{{
-                                    this.gia = priceSum(this.product.priceR,
-                                        this.product.discount) }}
+                                                                this.gia = priceSum(this.product.priceR,
+                                                                this.product.discount) }}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -222,10 +222,10 @@
 </template>
 <script>
 import axios from 'axios'
-import AddProduct from '../../components/AddProduct.vue';
-import CreactTrademark from '../../components/CreactTrademark.vue';
-import CreateProductPortfolio from '../../components/CreateProductPortfolio.vue';
-import headerAdmin from '../../components/headerAdmin.vue';
+import AddProduct from '../../components/Addmin/AddProduct.vue';
+import CreactTrademark from '../../components/Addmin/CreactTrademark.vue';
+import CreateProductPortfolio from '../../components/Addmin/CreateProductPortfolio.vue';
+import headerAdmin from '../../components/Header/headerAdmin.vue';
 export default {
     components: {
         CreactTrademark,

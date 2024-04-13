@@ -37,8 +37,8 @@
     </div>
 </template>
 <script>
-import headerAdmin from '../../components/headerAdmin.vue';
-import CreateProductPortfolio from '../../components/CreateProductPortfolio.vue';
+import headerAdmin from '../../components/Header/headerAdmin.vue';
+import CreateProductPortfolio from '../../components/Addmin/CreateProductPortfolio.vue';
 import axios from 'axios';
 export default {
     components: {

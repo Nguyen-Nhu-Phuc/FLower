@@ -12,6 +12,8 @@ import Info from '../views/Info.vue'
 import Order from '../views/admin/Order.vue'
 import Shop from '../views/Shop.main.vue'
 import Trending from '../views/Trending.vue'
+import Details from '../views/Details.vue'
+import Ai from '../views/Ai.vue'
 
 
 const routes = [
@@ -55,6 +57,7 @@ const routes = [
 
     {
         path: "/cart",
+        name: "cart",
         component: Cart
     },
     {
@@ -74,24 +77,23 @@ const routes = [
         name: 'login',
         component: Login,
     },
+    {
+        path:'/ai',
+        name: 'ai',
+        component: Ai,
+    },
 
     {
         path: '/info',
         name: 'info',
         component: Info,
     },
-    // {
-    //     path: '/:pathMatch(.*)*',
-    //     //path:'/',
-    //     redirect: '/home'
-    // },
 
-    // {
-    //     path: "/admin/picture/:id/edit",
-    //     name: "Edit",
-    //     component: Edit,
-    // }
-
+    {
+        path: '/details',
+        name: 'details',
+        component: Details,
+    }
 ];
 
 const router = createRouter({

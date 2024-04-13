@@ -46,8 +46,8 @@
   </div>
 </template>
 <script>
-import headerAdmin from "../../components/headerAdmin.vue";
-import CreactTrademark from "../../components/CreactTrademark.vue";
+import headerAdmin from "../../components/Header/headerAdmin.vue";
+import CreactTrademark from "../../components/Addmin/CreactTrademark.vue";
 import axios from "axios";
 export default {
   components: {

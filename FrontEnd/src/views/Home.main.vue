@@ -16,7 +16,7 @@
         <div class="new_product">
             <div class="card-deck">
                 <div class="card">
-                    <img class="card-img-top" src="../assets/images/hoa_cat.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../assets/images/rose_hr.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Hoa Mèo</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="../assets/images/hoa_cat.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../assets/images/sen_hr.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Hoa Mèo</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="../assets/images/hoa_cat.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../assets/images/sen1_hr.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Hoa Mèo</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to

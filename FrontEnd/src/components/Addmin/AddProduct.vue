@@ -2,7 +2,6 @@
     <!-- Button trigger modal -->
     <button type="button" class="btn item-admin" data-toggle="modal" data-target="#exampleModal2">
         Thêm Sản Phẩm
-        <!-- <i class="fas fa-plus"></i> -->
     </button>
 
     <!-- Modal -->
@@ -19,7 +18,7 @@
                 <div class="modal-body">
                     <main class="page payment-page">
                         <section class="payment-form dark">
-                            <div class="container">
+                            <div class="container-fluid">
                                 <div class="block-heading">
                                     <h2>THÊM SẢN PHẨM MỚI</h2>
                                     <p></p>
@@ -29,12 +28,12 @@
                                         <h3 class="title">ADMIN</h3>
                                         <div class="row">
                                             <div class="form-group col-sm-7">
-                                                <label for="card-holder">Thương hiệu</label><br>
+                                                <label for="card-holder">Loại hoa</label><br>
                                                 <div class="dropdown">
                                                     <div v-if="this.pictures.address != undefined"
                                                         class="form-control option-TH">{{ this.pictures.address }}</div>
                                                     <div v-if="this.pictures.address == undefined"
-                                                        class="form-control option-TH">--Chọn thương hiệu--</div>
+                                                        class="form-control option-TH">--Chọn loại hoa--</div>
                                                     <div class="dropdown-content">
                                                         <div v-for="(item, index) in this.thuonghieu" :key="index">
                                                             <label class="mr-3 form-control form-TH" :for="index + 'as'">{{
@@ -47,7 +46,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group col-sm-5">
-                                                <label for="prices">Giá gốc</label>
+                                                <label for="prices">Giá</label>
                                                 <div class="input-group expiration-date">
                                                     <input type="number" class="form-control" placeholder="VNĐ" id="prices"
                                                         v-model="this.pictures.priceR" required="true">
@@ -75,9 +74,9 @@
 
                                             </div>
                                             <div class="form-group col-sm-8">
-                                                <label for="names">Tên giày</label>
+                                                <label for="names">Tên hoa</label>
                                                 <input type="text" class="form-control" id="names"
-                                                    placeholder="Nhập tên giày..." v-model="this.pictures.name"
+                                                    placeholder="Nhập tên hoa..." v-model="this.pictures.name"
                                                     required="true">
                                             </div>
                                             <div class="form-group col-sm-4">

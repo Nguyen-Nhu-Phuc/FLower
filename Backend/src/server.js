@@ -13,6 +13,7 @@ import CartRouter from './routes/cart.js';
 import revenue from './routes/revenue.js';
 import routerOrder from './routes/order.route.js'
 import routerAddress from './routes/address.route.js'
+import forecast from './routes/forecasts.js'
 
 dotenv.config();
 connectDB();
@@ -35,6 +36,7 @@ app.use("/api/cart", CartRouter);
 app.use("/api/order", routerOrder);
 app.use("/api/revenue", revenue);
 app.use("/api/address", routerAddress);
+app.use("/api/forecast", forecast);
 
 const port = 3000;
 

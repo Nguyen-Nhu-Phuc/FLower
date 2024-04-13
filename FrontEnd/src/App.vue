@@ -1,6 +1,6 @@
 <script setup>
-import Header from "./components/Header.main.vue"
-import Footer from "./components/footer.vue";
+import Header from "./components/Header/Header.main.vue"
+import Footer from "./components/Footer/footer.vue"
 import { onMounted, provide, ref, watchEffect } from "vue";
 const checkAuth = ref(false)
 const loading = ref(false);

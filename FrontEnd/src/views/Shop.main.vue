@@ -1,30 +1,100 @@
 <template>
-  <section class="section shop" id="shop">
-    <div class="section__title">
-      <h1>shop</h1>
+  <!-- <section class="section shop" id="shop"> -->
+  <div class="section__title">
+    <h1>shop</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <form action="#" class="search">
+          <button class="search__button">
+            <div class="search__icon">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>magnifying-glass</title>
+                <path
+                  d="M17.545 15.467l-3.779-3.779c0.57-0.935 0.898-2.035 0.898-3.21 0-3.417-2.961-6.377-6.378-6.377s-6.186 2.769-6.186 6.186c0 3.416 2.961 6.377 6.377 6.377 1.137 0 2.2-0.309 3.115-0.844l3.799 3.801c0.372 0.371 0.975 0.371 1.346 0l0.943-0.943c0.371-0.371 0.236-0.84-0.135-1.211zM4.004 8.287c0-2.366 1.917-4.283 4.282-4.283s4.474 2.107 4.474 4.474c0 2.365-1.918 4.283-4.283 4.283s-4.473-2.109-4.473-4.474z">
+                </path>
+              </svg>
+            </div>
+          </button>
+          <input type="text" class="search__input" placeholder="Search...">
+          <button class="mic__button">
+            <div class="mic__icon">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 83.44 122.88"
+                style="enable-background: new 0 0 83.44 122.88" xml:space="preserve">
+                <g>
+                  <path
+                    d="M45.04,95.45v24.11c0,1.83-1.49,3.32-3.32,3.32c-1.83,0-3.32-1.49-3.32-3.32V95.45c-10.16-0.81-19.32-5.3-26.14-12.12 C4.69,75.77,0,65.34,0,53.87c0-1.83,1.49-3.32,3.32-3.32s3.32,1.49,3.32,3.32c0,9.64,3.95,18.41,10.31,24.77 c6.36,6.36,15.13,10.31,24.77,10.31h0c9.64,0,18.41-3.95,24.77-10.31c6.36-6.36,10.31-15.13,10.31-24.77 c0-1.83,1.49-3.32,3.32-3.32s3.32,1.49,3.32,3.32c0,11.48-4.69,21.91-12.25,29.47C64.36,90.16,55.2,94.64,45.04,95.45L45.04,95.45z M41.94,0c6.38,0,12.18,2.61,16.38,6.81c4.2,4.2,6.81,10,6.81,16.38v30c0,6.38-2.61,12.18-6.81,16.38c-4.2,4.2-10,6.81-16.38,6.81 s-12.18-2.61-16.38-6.81c-4.2-4.2-6.81-10-6.81-16.38v-30c0-6.38,2.61-12.18,6.81-16.38C29.76,2.61,35.56,0,41.94,0L41.94,0z M53.62,11.51c-3-3-7.14-4.86-11.68-4.86c-4.55,0-8.68,1.86-11.68,4.86c-3,3-4.86,7.14-4.86,11.68v30c0,4.55,1.86,8.68,4.86,11.68 c3,3,7.14,4.86,11.68,4.86c4.55,0,8.68-1.86,11.68-4.86c3-3,4.86-7.14,4.86-11.68v-30C58.49,18.64,56.62,14.51,53.62,11.51 L53.62,11.51z">
+                  </path>
+                </g>
+              </svg>
+            </div>
+          </button>
+
+          <div class="camera__upload">
+            <label for="file">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z" />
+                <path
+                  d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+              </svg>
+            </label>
+            <input type="file" id="file" name="file" />
+
+          </div>
+
+        </form>
+      </div>
     </div>
-    <div class="container">
-      <div v-for="(item, index) in this.danhmuc" :key="index">
-        <h1>{{ item.nameDM }}</h1>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 category">
+        <!-- DanhMuc -->
+        <div class="box border-bottom">
+          <div class="box-label text-uppercase d-flex align-items-center">DANH MỤC <button class="btn ml-auto"
+              type="button" data-toggle="collapse" data-target="#inner-box2" aria-expanded="false"
+              aria-controls="inner-box2" id="out1" onclick="outerFilter()">
+            </button>
+          </div>
+
+          <div class="my-2">
+            <label>
+              Tất cả
+              <input class="nut" style="visibility: initial;" type="radio" name="b" :value="''" v-model="this.search2">
+            </label>
+          </div>
+
+          <div v-for="(item, index) in this.danhmuc" :key="index">
+            <div class="my-1">
+              <label>
+                {{ item.nameDM }}
+                <input class="nut" style="visibility: initial;" type="radio" name="b" :value="item.nameDM"
+                  v-model="this.search2">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-9">
         <div class="card-container">
           <div type="button" data-toggle="modal" data-target="#exampleModalCenter" class="col-lg-4 ml-1 col-md-6"
             v-for="product in filteredProducts" :key="product.id">
             <div @click="copyID(product._id)" class="card d-flex flex-column align-items-center">
-              <div class="discount-tt">EXTRA SALE</div>
-              <div class="discount-pt">-{{ product.discount }}%</div>
-              <div class="card-img"> <img class="img-product" :src="product.image.url" alt=""> </div>
-              <div class="product-name">{{ product.gen }}</div>
+              <div class="card-img">
+                <img class="img-product" :src="product.image.url" alt="">
+              </div>
               <div class="product-name">{{ product.name }}</div>
               <div class="card-body pt-5">
                 <div class="d-flex align-items-center price">
-                  <div class="del mr-2"><span class="text-dark">{{ (product.priceR).toLocaleString('en-US', {
-        style:
-          'currency', currency: 'VND'
-      }) }}</span></div>
-                  <div class="font-weight-bold">{{ (product.price).toLocaleString('en-US', {
-        style: 'currency',
-        currency: 'VND'
-                    }) }}</div>
+                  <div class="font-weight-bold">
+                    {{ (product.price).toLocaleString('en-US', { style: 'currency', currency: 'VND' }) }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -32,13 +102,108 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
+  <!-- </section> -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="about__product text-center">
+                      <img v-if="element.image.url !== undefined" :src="`${element.image.url}`">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="about__product text-center">
+                      <img v-if="element.image.url !== undefined" :src="`${element.image.url}`">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="about__product text-center">
+                      <img v-if="element.image.url !== undefined" :src="`${element.image.url}`">
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <!-- <div class="modal-header">
+                <div class="about__product text-center"><img v-if="this.element.image.url != undefined"
+                    :src="`${this.element.image.url}`">
+                </div>
+              </div> -->
+
+            </div>
+            <div class="col-6">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Thông tin sản phẩm</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form method="PUT" @submit.prevent="addCart(this.IDcart)">
+                <div class="modal-body">
+                  <div class="d-flex justify-content-center mt-0 mb-0 container">
+                    <div class="card_item p-1 bg-white">
+
+                      <div class="stats mt-2">
+                        <div class="d-flex justify-content-between p-price">
+                          <span>Giá</span><span>{{ this.element.price }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between p-price">
+                          <span>Số lượng sản phẩm</span><span>{{ this.element.Quantity }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between p-price"><span>Chọn Số lượng</span><span><input
+                              type="number" :max="this.element.Quantity" min="1"
+                              v-model="this.cart.idProduct_item[0].quantity"></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between p-price">
+                        <span>
+                          <b>Thành tiền</b>
+                        </span>
+                        <b><span><input class="" style="text-align: right;" type="number" disabled
+                              :value="TTien(this.cart.idProduct_item[0].quantity, this.element.price)"></span></b>
+                      </div>
+                      <!-- <div class=" d-flex justify-content-between total font-weight-bold mt-4">
+                        <span class="bt-gia">Thành tiền</span> <span class="bt-gia"><input class="number_TT" type="radio"
+                            checked :value="TTien(this.cart.idProduct_item[0].quantity, this.element.price)"
+                            v-model="this.money"></span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button @click="checklogin()" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 import axios from 'axios';
-import Header from '../components/Header.main.vue';
-import fotter from '../components/footer.vue';
+import Header from '../components/Header/Header.main.vue';
+import fotter from '../components/Footer/footer.vue';
+
 export default {
   components: {
     fotter,
@@ -146,7 +311,8 @@ export default {
         this.$router.replace({ path: '/login' });
       }
       return;
-    }
+    },
+
   },
 
   mounted() {
@@ -174,6 +340,157 @@ export default {
 </script>
 
 <style>
+
+
+
+.modal-dialog {
+  max-width: 100%;
+}
+
+
+.modal-content {
+  width: 100%;
+
+}
+
+
+.col-6 {
+  width: 80%;
+
+}
+.about__product {
+  height: 700px;
+  width: auto;
+}
+
+#file {
+  display: none;
+}
+
+svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+
+.search {
+  border-radius: 25px;
+  border: 1px solid #353535;
+  flex: 0 0 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__input {
+  font-family: "lora", sans-serif;
+  font-size: 17px;
+  color: #333333;
+  background-color: #f4f2f2;
+  border: none;
+  padding: 14px 72px 14px 42px;
+  border-radius: 1000px;
+  width: 94%;
+  margin-left: -34px;
+  margin-right: -66px;
+  transition: all 0.2s;
+}
+
+.search__input:focus {
+  outline: none;
+  width: 100%;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #353535;
+}
+
+.search__button {
+  border: none;
+  background-color: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.search__button:focus {
+  outline: none;
+}
+
+.search__button:active {
+  transform: translateY(2px);
+}
+
+.search__icon {
+  height: 20px;
+  width: 20px;
+  fill: #353535;
+}
+
+.mic__button {
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.mic__button:focus {
+  outline: none;
+}
+
+.mic__button:active {
+  transform: translateY(2px);
+}
+
+.mic__icon {
+  height: 28px;
+  width: 20px;
+  fill: #353535;
+}
+
+.mic__icon:hover {
+  fill: #353535;
+}
+
+.picture__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.picture__button:focus {
+  outline: none;
+}
+
+.picture__button:active {
+  transform: translateY(2px);
+}
+
+.picture__icon {
+  height: 16px;
+  width: 20px;
+  fill: #353535;
+}
+
+.picture__icon:hover {
+  fill: #353535;
+}
+
+
+.item {
+  margin-top: 16px;
+  font-size: 40px;
+  color: #ffff;
+  text-align: center;
+  min-height: 380px;
+  line-height: 380px;
+  background-color: orange;
+}
+
 .shop {
   padding: calc(3rem * 1.3) 0;
   min-height: 100vh;
@@ -526,8 +843,8 @@ label {
 }
 
 .box-label {
-  color: #11698e;
-  font-size: 0.9rem;
+  color: #353535;
+  font-size: 1.5rem;
   font-weight: 800
 }
 
@@ -598,7 +915,7 @@ label {
 
 .card {
   position: relative;
-  padding: 5px;
+  padding: 1px;
   cursor: pointer;
   transition: .3s all ease-in-out;
   height: 350px;
@@ -607,14 +924,14 @@ label {
 }
 
 .card:hover {
-  box-shadow: 2px 2px 15px #fd9a6ce5;
+  /* box-shadow: 2px 2px 15px #fd9a6ce5; */
   transform: scale(1.02)
 }
 
 .card .product-name {
   position: relative;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 18px;
   top: 20px;
 }
 
@@ -629,10 +946,9 @@ label {
 }
 
 .card-img img {
-  padding-top: px;
   width: inherit;
-  height: 180px;
-  object-fit: contain;
+  height: 250px;
+  border-radius: 20px 20px 0 0;
   display: block
 }
 
